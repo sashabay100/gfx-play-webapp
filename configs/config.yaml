@@ -1,0 +1,26 @@
+# Example configuration for GFX Play Bot
+app:
+  name: "GFX Play Bot"
+  default_language: "en"
+  admins:
+    - 123456789
+currency:
+  name: "Stars"
+  starting_amount: 100
+daily_spin:
+  reward_table:
+    - {name: "10_stars", stars: 10, weight: 50}
+    - {name: "50_stars", stars: 50, weight: 30}
+    - {name: "rare_nft_ticket", stars: 0, weight: 20}
+  cooldown_hours: 24
+upgrade:
+  default_success_rate: 0.3
+cases:
+  sample_case:
+    price: 50
+    items:
+      - {id: "common_skin", rarity: "common", weight: 700}
+      - {id: "rare_skin", rarity: "rare", weight: 200}
+      - {id: "legendary_nft", rarity: "legendary", weight: 100}
+languages:
+  available: [en, ru, de, fr]
